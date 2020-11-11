@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TakeItEasySK</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Inicia Sesión</string>
+    <string name="register">Registrate</string>
+    <string name="welcomeTitle">Take It Easy App - Store Manager</string>
+</resources>
