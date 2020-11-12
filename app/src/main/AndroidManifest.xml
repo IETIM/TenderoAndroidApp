@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
         <activity android:name=".NewProductForm"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Activity2">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Activity2" />
         </activity>
-        <activity android:name=".Activity2" />
+        <activity android:name=".Activity2"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".StoreKeeperDashboardActivity"
             android:label="@string/title_activity_store_keeper_dashboard"
