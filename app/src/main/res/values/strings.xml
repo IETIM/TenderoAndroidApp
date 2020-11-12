@@ -22,4 +22,5 @@
     <string name="category">Categoría</string>
     <string name="price">Precio</string>
     <string name="product_register">Registrar</string>
+    <string name="Add_Image_Button">Añadir imagen</string>
 </resources>
