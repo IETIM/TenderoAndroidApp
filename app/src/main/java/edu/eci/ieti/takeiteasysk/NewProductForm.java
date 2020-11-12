@@ -1,4 +1,4 @@
-package edu.eci.ieti.takeiteasysk.ui;
+package edu.eci.ieti.takeiteasysk;
 
 import androidx.appcompat.app.AppCompatActivity;
 

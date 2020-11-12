@@ -4,23 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.NewProductForm">
+    tools:context=".NewProductForm">
 
     <Button
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="54dp"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="120dp"
-        android:layout_marginBottom="60dp"
         android:text="@string/product_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.865" />
+        app:layout_constraintVertical_bias="0.393" />
 
     <EditText
         android:id="@+id/editTextNumber"
@@ -84,8 +82,8 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="67dp"
-        android:layout_height="37dp"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:text="@string/stock"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumber2"
@@ -93,8 +91,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="67dp"
-        android:layout_height="37dp"
+        android:layout_width="91dp"
+        android:layout_height="34dp"
         android:layout_marginStart="24dp"
         android:text="@string/description"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextMultiLine"
@@ -137,4 +135,5 @@
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
