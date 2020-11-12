@@ -16,4 +16,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="name">Nombre</string>
+    <string name="stock">Existencias</string>
+    <string name="description">Descripción</string>
+    <string name="category">Categoría</string>
+    <string name="price">Precio</string>
+    <string name="product_register">Registrar</string>
 </resources>
