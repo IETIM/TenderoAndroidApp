@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".Activity2"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".ui.products.ProductsActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
         <activity
             android:name=".StoreKeeperDashboardActivity"
             android:label="@string/title_activity_store_keeper_dashboard"

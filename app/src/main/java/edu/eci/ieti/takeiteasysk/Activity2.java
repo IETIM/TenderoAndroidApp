@@ -11,9 +11,5 @@ public class Activity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity);
     }
-    public void newProduct(View view) {
-        Intent intent = new Intent(this, NewProductForm.class);
-        startActivity(intent);
-    }}
+  }

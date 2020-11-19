@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import edu.eci.ieti.takeiteasysk.ui.products.ProductsActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /** Called when the user taps the Send button */
     public void logIn(View view) {
-        Intent intent = new Intent(this, Activity2.class);
+        Intent intent = new Intent(this, ProductsActivity.class);
         startActivity(intent);
     }
 }
