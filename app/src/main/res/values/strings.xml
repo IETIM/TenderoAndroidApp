@@ -26,4 +26,5 @@
     <string name="price">Precio</string>
     <string name="product_register">Registrar</string>
     <string name="Add_Image_Button">Añadir imagen</string>
+    <string name="logout">Log Out</string>
 </resources>

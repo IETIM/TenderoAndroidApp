@@ -1,5 +1,8 @@
 package edu.eci.ieti.takeiteasysk;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -60,4 +63,13 @@ public class StoreKeeperDashboardActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void onLogoutClicked(View view){
+        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.PREFERENCE_FILE_KEY), Context.MODE_PRIVATE );
+        sharedPref.edit().clear().commit();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
