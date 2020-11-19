@@ -1,27 +1,27 @@
 package edu.eci.ieti.takeiteasysk.model.auth;
 
 public class Token {
-    private String accessToken;
+    private String token;
 
     public Token(String token) {
-        this.accessToken = token;
+        this.token = token;
     }
 
     public Token() {
     }
 
-    public String getAccessToken() {
-        return accessToken;
+    public String getToken() {
+        return token;
     }
 
-    public void setAccessToken(String token) {
-        this.accessToken = token;
+    public void setToken(String token) {
+        this.token = token;
     }
 
     @Override
     public String toString() {
         return "Token{" +
-                "token='" + accessToken + '\'' +
+                "token='" + token + '\'' +
                 '}';
     }
 }

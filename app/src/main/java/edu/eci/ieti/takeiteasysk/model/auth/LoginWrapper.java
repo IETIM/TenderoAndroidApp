@@ -1,20 +1,20 @@
 package edu.eci.ieti.takeiteasysk.model.auth;
 
 public class LoginWrapper {
-    private String email;
+    private String username;
     private String password;
 
     public LoginWrapper(String email, String password) {
-        this.email = email;
+        this.username = email;
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUsername() {
+        return username;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUsername(String email) {
+        this.username = email;
     }
 
     public String getPassword() {
@@ -28,7 +28,7 @@ public class LoginWrapper {
     @Override
     public String toString() {
         return "LoginWrapper{" +
-                "email='" + email + '\'' +
+                "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

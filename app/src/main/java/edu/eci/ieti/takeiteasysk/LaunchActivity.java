@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import edu.eci.ieti.takeiteasysk.ui.products.ProductsActivity;
+
 public class LaunchActivity extends AppCompatActivity {
     public static final String TOKEN_KEY = "TOKEN_KEY";
 
@@ -19,7 +21,7 @@ public class LaunchActivity extends AppCompatActivity {
 
         if(sharedPref.contains(TOKEN_KEY)){
             //TODO go to MainActivity
-            Intent intent = new Intent(this, Activity2.class);
+            Intent intent = new Intent(this, ProductsActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
 
