@@ -74,7 +74,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/button_rounded"
-                android:onClick="logIn"
+                android:onClick="onLoginClicked"
                 android:text="@string/login" />
 
         </LinearLayout>
