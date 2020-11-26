@@ -24,7 +24,6 @@ public class Product {
     }
 
     public Product(String name, String description, Long price) {
-        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.description = description;
         this.price = price;
@@ -85,4 +84,6 @@ public class Product {
     public void setImage(String image) {
         this.image = image;
     }
+
+
 }

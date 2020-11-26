@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 
 import edu.eci.ieti.takeiteasysk.model.auth.LoginWrapper;
 import edu.eci.ieti.takeiteasysk.model.auth.Token;
-import edu.eci.ieti.takeiteasysk.services.AuthService;
+import edu.eci.ieti.takeiteasysk.network.services.AuthService;
 import edu.eci.ieti.takeiteasysk.ui.products.ProductsActivity;
 import retrofit2.Response;
 import retrofit2.Retrofit;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void storeToken(Token token) {
         SharedPreferences sharedPref =
-                getSharedPreferences(getString(R.string.PREFERENCE_FILE_KEY), Context.MODE_PRIVATE );
+                getSharedPreferences(getString(R.string.preferece_file_key), Context.MODE_PRIVATE );
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("TOKEN_KEY",token.getToken());
         editor.commit();

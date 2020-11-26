@@ -1,4 +1,4 @@
-package edu.eci.ieti.takeiteasysk.services;
+package edu.eci.ieti.takeiteasysk.network.services;
 
 import edu.eci.ieti.takeiteasysk.model.auth.LoginWrapper;
 import edu.eci.ieti.takeiteasysk.model.auth.Token;
