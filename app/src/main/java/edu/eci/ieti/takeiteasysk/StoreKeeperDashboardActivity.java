@@ -65,7 +65,7 @@ public class StoreKeeperDashboardActivity extends AppCompatActivity {
     }
 
     public void onLogoutClicked(View view){
-        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.PREFERENCE_FILE_KEY), Context.MODE_PRIVATE );
+        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.preferece_file_key), Context.MODE_PRIVATE );
         sharedPref.edit().clear().commit();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

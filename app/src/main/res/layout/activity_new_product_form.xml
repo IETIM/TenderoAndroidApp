@@ -24,11 +24,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+            app:layout_constraintTop_toBottomOf="@+id/categoriaproducto"
             app:layout_constraintVertical_bias="1.0" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/precioproducto"
             android:layout_width="0dp"
             android:layout_height="68dp"
             android:layout_marginStart="24dp"
@@ -39,10 +39,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintTop_toBottomOf="@+id/nombreproducto" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/nombreproducto"
             android:layout_width="0dp"
             android:layout_height="68dp"
             android:layout_marginStart="24dp"
@@ -56,7 +56,7 @@
             app:layout_constraintTop_toBottomOf="@+id/button5" />
 
         <EditText
-            android:id="@+id/editTextNumber2"
+            android:id="@+id/existenciasproducto"
             android:layout_width="244dp"
             android:layout_height="68dp"
             android:layout_marginStart="24dp"
@@ -67,7 +67,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.555"
             app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+            app:layout_constraintTop_toBottomOf="@+id/precioproducto" />
 
         <TextView
             android:id="@+id/textView3"
@@ -75,7 +75,7 @@
             android:layout_height="37dp"
             android:layout_marginStart="24dp"
             android:text="@string/name"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/nombreproducto"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -84,7 +84,7 @@
             android:layout_height="37dp"
             android:layout_marginStart="24dp"
             android:text="@string/price"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumber"
+            app:layout_constraintBaseline_toBaselineOf="@+id/precioproducto"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -93,7 +93,7 @@
             android:layout_height="35dp"
             android:layout_marginStart="24dp"
             android:text="@string/stock"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumber2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/existenciasproducto"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -102,7 +102,7 @@
             android:layout_height="34dp"
             android:layout_marginStart="24dp"
             android:text="@string/description"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextMultiLine"
+            app:layout_constraintBaseline_toBaselineOf="@+id/descripcionproducto"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -111,11 +111,11 @@
             android:layout_height="37dp"
             android:layout_marginStart="24dp"
             android:text="@string/category"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName4"
+            app:layout_constraintBaseline_toBaselineOf="@+id/categoriaproducto"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/categoriaproducto"
             android:layout_width="0dp"
             android:layout_height="68dp"
             android:layout_marginStart="24dp"
@@ -126,10 +126,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+            app:layout_constraintTop_toBottomOf="@+id/descripcionproducto" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/descripcionproducto"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_marginStart="24dp"
@@ -141,7 +141,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView6"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+            app:layout_constraintTop_toBottomOf="@+id/existenciasproducto" />
 
         <TextView
             android:id="@+id/textView8"

@@ -17,7 +17,7 @@ public class LaunchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch);
         SharedPreferences sharedPref =
-                getSharedPreferences(getString(R.string.PREFERENCE_FILE_KEY), Context.MODE_PRIVATE );
+                getSharedPreferences(getString(R.string.preferece_file_key), Context.MODE_PRIVATE );
 
         if(sharedPref.contains(TOKEN_KEY)){
             //TODO go to MainActivity
