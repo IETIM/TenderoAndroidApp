@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import edu.eci.ieti.takeiteasysk.network.services.AuthService;
 import edu.eci.ieti.takeiteasysk.network.services.ProductService;
+import edu.eci.ieti.takeiteasysk.network.services.StoreService;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -18,6 +19,7 @@ public class RetrofitNetwork
 {
     AuthService authService;
     ProductService productService;
+    StoreService storeService;
 
 
     public RetrofitNetwork()
@@ -48,10 +50,15 @@ public class RetrofitNetwork
                 new Retrofit.Builder().baseUrl("http:/10.0.2.2:8080/").addConverterFactory( GsonConverterFactory.create() ).client(
                         httpClient.build() ).build();
         productService=retrofit.create(ProductService.class);
+        storeService = retrofit.create(StoreService.class);
 
     }
 
     public ProductService getProductService() {
         return productService;
+    }
+
+    public StoreService getStoreService() {
+        return storeService;
     }
 }

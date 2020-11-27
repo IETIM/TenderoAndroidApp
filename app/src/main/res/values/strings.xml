@@ -27,4 +27,24 @@
     <string name="product_register">Registrar</string>
     <string name="Add_Image_Button">Añadir imagen</string>
     <string name="logout">Log Out</string>
+    <string name="registrate_como_tendero">Registrate como Tendero!</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="datos_de_tu_tienda">Datos de tu tienda!</string>
+    <string name="nombre_de_tu_tienda">Nombre de tu Tienda</string>
+    <string name="direccion_de_la_tienda">Direccion de la tienda</string>
+    <string name="tipo_de_tu_tienda">Tipo de tu tienda!</string>
+    <string name="registrate">Registrate!</string>
+    <string-array name="Store_Types">
+        <item>Selecciona!</item>
+        <item>Droguería</item>
+        <item>Supermercado</item>
+        <item>Ferreteria</item>
+        <item>Restaurante</item>
+        <item>Panadería</item>
+        <item>Variedades</item>
+
+    </string-array>
 </resources>
