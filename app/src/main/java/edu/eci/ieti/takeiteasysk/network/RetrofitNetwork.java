@@ -28,6 +28,7 @@ public class RetrofitNetwork
                 .addConverterFactory( GsonConverterFactory.create() ).build();
 
         authService = retrofit.create( AuthService.class );
+        storeService = retrofit.create(StoreService.class);
     }
     public RetrofitNetwork( final String token )
     {
