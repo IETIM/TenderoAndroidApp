@@ -57,16 +57,6 @@
                 android:inputType="textPassword" />
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="84dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/button_rounded"
-                android:text="@string/register" />
-
-            <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,6 +66,17 @@
                 android:background="@drawable/button_rounded"
                 android:onClick="onLoginClicked"
                 android:text="@string/login" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="84dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/button_rounded"
+                android:onClick="onRegisterClicked"
+                android:text="@string/register" />
 
         </LinearLayout>
     </ScrollView>
