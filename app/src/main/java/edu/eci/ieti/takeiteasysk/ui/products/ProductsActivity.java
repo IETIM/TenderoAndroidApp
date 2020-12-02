@@ -20,6 +20,7 @@ import edu.eci.ieti.takeiteasysk.persistence.ProductsPersistence;
 import edu.eci.ieti.takeiteasysk.persistence.impl.ProductsPersistenceImpl;
 import edu.eci.ieti.takeiteasysk.repository.ProductRepository;
 import edu.eci.ieti.takeiteasysk.storage.Storage;
+import edu.eci.ieti.takeiteasysk.ui.orders.OrdersList;
 import edu.eci.ieti.takeiteasysk.ui.viewmodel.ProductsViewModel;
 
 public class ProductsActivity extends AppCompatActivity {
@@ -43,11 +44,17 @@ public class ProductsActivity extends AppCompatActivity {
         });
         productsAdapter.updateTasks(productsPersistence.getProducts());
         findViewById(R.id.floatingActionButton).setOnClickListener((View)->newProduct());
+        findViewById(R.id.floatingActionButton2).setOnClickListener((View)->myOrders());
     }
     public void newProduct() {
         Intent intent = new Intent(this, NewProductForm.class);
         startActivity(intent);
         finish();
+    }
+
+    public void myOrders(){
+        Intent intent = new Intent(this, OrdersList.class);
+        startActivity(intent);
     }
     private void configureRecyclerView()
     {

@@ -3,6 +3,7 @@ package edu.eci.ieti.takeiteasysk.network;
 import java.io.IOException;
 
 import edu.eci.ieti.takeiteasysk.network.services.AuthService;
+import edu.eci.ieti.takeiteasysk.network.services.OrderService;
 import edu.eci.ieti.takeiteasysk.network.services.ProductService;
 import edu.eci.ieti.takeiteasysk.network.services.StoreService;
 import okhttp3.Interceptor;
@@ -20,6 +21,7 @@ public class RetrofitNetwork
     AuthService authService;
     ProductService productService;
     StoreService storeService;
+    OrderService orderService;
 
 
     public RetrofitNetwork()
@@ -52,6 +54,7 @@ public class RetrofitNetwork
                         httpClient.build() ).build();
         productService=retrofit.create(ProductService.class);
         storeService = retrofit.create(StoreService.class);
+        orderService = retrofit.create(OrderService.class);
 
     }
 
@@ -61,5 +64,9 @@ public class RetrofitNetwork
 
     public StoreService getStoreService() {
         return storeService;
+    }
+
+    public OrderService getOrderService() {
+        return orderService;
     }
 }

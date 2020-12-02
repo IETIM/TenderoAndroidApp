@@ -89,6 +89,13 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("SHOP_ID",id);
         editor.commit();
     }
+    private void storeShopName(String name) {
+        SharedPreferences sharedPref =
+                getSharedPreferences(getString(R.string.preferece_file_key), Context.MODE_PRIVATE );
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("SHOP_NAME",name);
+        editor.commit();
+    }
 
 
     private Runnable callAPI(AuthService authService,String correo,String pass){
@@ -110,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
                         System.out.println("RESP BODY " + resp.body());
                         Storekeeper sk = resp.body();
                         storeShopId(sk.getShop().getId());
+                        storeShopName(sk.getShop().getName());
 
                             runOnUiThread(new Runnable() {
                                 @Override
