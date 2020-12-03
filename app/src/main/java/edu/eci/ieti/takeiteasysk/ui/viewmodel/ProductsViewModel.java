@@ -36,5 +36,14 @@ public class ProductsViewModel extends ViewModel {
 
         // Do an asynchronous operation to fetch users.
     }
+    public void deleteProduct(Product product,List<Product> products){
+        executorService.execute(()->{
+            productRepository.deleteProduct(product.getId());
+            products.remove(product);
+            this.products.postValue(products);
+        });
+
+    }
+
 }
 

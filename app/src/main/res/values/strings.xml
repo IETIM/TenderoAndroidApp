@@ -37,6 +37,11 @@
     <string name="direccion_de_la_tienda">Direccion de la tienda</string>
     <string name="tipo_de_tu_tienda">Tipo de tu tienda!</string>
     <string name="registrate">Registrate!</string>
+    <string name="eliminar_producto">Eliminar Producto</string>
+    <string name="existencias">Existencias</string>
+    <string name="saveProduct">Guardar</string>
+    <string name="update_product">Actualizar producto</string>
+    <string name="Change_Image_Button">Cambiar imagen</string>
     <string-array name="Store_Types">
         <item>Selecciona!</item>
         <item>Droguería</item>
