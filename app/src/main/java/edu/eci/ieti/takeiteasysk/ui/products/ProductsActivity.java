@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
@@ -42,6 +43,7 @@ public class ProductsActivity extends AppCompatActivity {
         model.getProducts(storage.getShopId()).observe(this, products -> {
             productsAdapter.updateTasks(products);
         });
+
         productsAdapter.updateTasks(productsPersistence.getProducts());
         findViewById(R.id.floatingActionButton).setOnClickListener((View)->newProduct());
         findViewById(R.id.floatingActionButton2).setOnClickListener((View)->myOrders());
