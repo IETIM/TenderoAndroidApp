@@ -75,7 +75,7 @@ public class ProductsAdapter
         notifyDataSetChanged();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder
+    public class ViewHolder extends RecyclerView.ViewHolder
     {
         TextView name,price,description,stocks;
         ImageView image;

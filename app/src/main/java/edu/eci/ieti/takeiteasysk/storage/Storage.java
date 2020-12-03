@@ -16,6 +16,9 @@ public class Storage
 
     private final String TOKEN_KEY = "TOKEN_KEY";
     private final String SHOP_ID="SHOP_ID";
+    private final String SHOP_NAME = "SHOP_NAME";
+    private final String TENDERO_NAME = "TENDERO_NAME";
+    private final String TENDERO_EMAIL = "TENDERO_EMAIL";
 
     private final SharedPreferences sharedPreferences;
 
@@ -34,6 +37,17 @@ public class Storage
     public String getShopId(){
         return sharedPreferences.getString(SHOP_ID,null);
     }
+
+    public String getShopName(){return sharedPreferences.getString(SHOP_NAME,null);};
+
+    public String getTenderoName() {
+        return  sharedPreferences.getString(TENDERO_NAME,null);
+    }
+
+    public String getTenderoEmail() {
+        return  sharedPreferences.getString(TENDERO_EMAIL,null);
+    }
+
     public void setShopId(String id){
         sharedPreferences.edit().putString(SHOP_ID,id).apply();
     }

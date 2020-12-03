@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
         android:usesCleartextTraffic="true">
+
         <activity android:name=".UpdateProduct"
             android:parentActivityName=".ui.products.ProductsActivity">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -19,6 +20,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.products.ProductsActivity" />
         </activity>
+
+        <activity android:name=".ui.orders.OrdersList"></activity>
+
         <activity android:name=".ui.register.RegisterActivity" />
         <activity android:name=".LaunchActivity">
             <intent-filter>
