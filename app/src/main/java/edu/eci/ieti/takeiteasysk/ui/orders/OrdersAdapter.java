@@ -31,6 +31,9 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.ViewHolder
 
         Order order = orders.get( position );
         holder.idOrder.setText(order.getId());
+        holder.user.setText(order.getUser());
+        holder.valor.setText(""+ order.getTotal());
+        holder.cant.setText(order.getPurchases() == null ? "N/A" : "" + order.getPurchases().size());
 
         //TODO implement update view holder using the task values
     }
@@ -48,12 +51,15 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.ViewHolder
 
     public class ViewHolder extends RecyclerView.ViewHolder
     {
-        TextView idOrder;
+        TextView idOrder,user,valor,cant;
         ViewHolder( @NonNull View productView )
         {
             super( productView );
 
             idOrder = productView.findViewById(R.id.idOrden);
+            user = productView.findViewById(R.id.orderUser);
+            valor = productView.findViewById(R.id.orderValor);
+            cant = productView.findViewById(R.id.cantProductos);
         }
     }
 }

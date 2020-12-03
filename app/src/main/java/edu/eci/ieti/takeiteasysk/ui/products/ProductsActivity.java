@@ -49,7 +49,6 @@ public class ProductsActivity extends AppCompatActivity {
     public void newProduct() {
         Intent intent = new Intent(this, NewProductForm.class);
         startActivity(intent);
-        finish();
     }
 
     public void myOrders(){

@@ -13,9 +13,14 @@ public class OrdersPersistenceImpl implements OrdersPersistence {
     public List<Order> getOrders() {
         ArrayList<Order> orders;
         orders = new ArrayList<>();
+        ArrayList<Purchase> pl= new ArrayList<>();
         Purchase p = new Purchase("1","1",2);
+        pl.add(p);
         Order o = new Order();
-        o.setId("IdJuasJuas");
+        o.setId("123");
+        o.setTotal(123.4);
+        o.setUser("Me");
+        o.setPurchases(pl);
         orders.add(o);
         return  orders;
     }
