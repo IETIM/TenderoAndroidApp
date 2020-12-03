@@ -27,5 +27,12 @@ public class ProductRepository {
         }
         return products;
     }
+    public void deleteProduct(String idProduct){
+        try {
+            productService.deleteProduct(idProduct).execute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
