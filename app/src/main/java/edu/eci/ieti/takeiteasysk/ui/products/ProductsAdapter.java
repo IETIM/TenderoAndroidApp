@@ -3,6 +3,7 @@ package edu.eci.ieti.takeiteasysk.ui.products;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import edu.eci.ieti.takeiteasysk.R;
+import edu.eci.ieti.takeiteasysk.UpdateProduct;
 import edu.eci.ieti.takeiteasysk.model.Product;
 import edu.eci.ieti.takeiteasysk.ui.viewmodel.ProductsViewModel;
 
@@ -25,9 +27,11 @@ public class ProductsAdapter
         extends RecyclerView.Adapter<ProductsAdapter.ViewHolder>
 {
 
-    List<Product> products = null;
-    Context context;
-    ProductsViewModel viewModel;
+    private List<Product> products = null;
+    private Context context;
+    private ProductsViewModel viewModel;
+    public static final String PRODUCT="Product";
+
     public ProductsAdapter(Context context, ProductsViewModel productsViewModel) {
         this.context = context;
         this.viewModel=productsViewModel;
@@ -51,6 +55,13 @@ public class ProductsAdapter
         //TODO implement update view holder using the task values
         Glide.with(context).load(product.getImage()).into(holder.image);
         holder.delete.setOnClickListener((view)->{confirmDeleteDialog(product);});
+        holder.update.setOnClickListener( (view)->{updateProduct(product);} );
+    }
+
+    private void updateProduct(Product product) {
+        Intent intent = new Intent(context, UpdateProduct.class);
+        intent.putExtra(PRODUCT,product);
+        context.startActivity(intent);
     }
 
     @Override
@@ -86,8 +97,8 @@ public class ProductsAdapter
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
         builder
-                .setMessage("Are you sure?")
-                .setPositiveButton("Yes",  new DialogInterface.OnClickListener() {
+                .setMessage("¿Estas seguro que quieres eliminar este producto?")
+                .setPositiveButton("Si",  new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         viewModel.deleteProduct(product,products);

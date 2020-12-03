@@ -1,9 +1,10 @@
 package edu.eci.ieti.takeiteasysk.model;
 
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Product {
+public class Product implements Serializable {
 
     private String id;
 
