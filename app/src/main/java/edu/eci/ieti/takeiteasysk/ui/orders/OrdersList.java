@@ -10,9 +10,7 @@ import android.view.View;
 
 import edu.eci.ieti.takeiteasysk.R;
 import edu.eci.ieti.takeiteasysk.persistence.OrdersPersistence;
-import edu.eci.ieti.takeiteasysk.persistence.ProductsPersistence;
 import edu.eci.ieti.takeiteasysk.persistence.impl.OrdersPersistenceImpl;
-import edu.eci.ieti.takeiteasysk.persistence.impl.ProductsPersistenceImpl;
 import edu.eci.ieti.takeiteasysk.repository.OrdersRepository;
 import edu.eci.ieti.takeiteasysk.repository.ProductRepository;
 import edu.eci.ieti.takeiteasysk.storage.Storage;

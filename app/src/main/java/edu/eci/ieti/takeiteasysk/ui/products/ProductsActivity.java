@@ -48,7 +48,6 @@ public class ProductsActivity extends AppCompatActivity {
         });
 
 
-        productsAdapter.updateTasks(productsPersistence.getProducts());
         findViewById(R.id.floatingActionButton).setOnClickListener((View)->newProduct());
         findViewById(R.id.floatingActionButton2).setOnClickListener((View)->myOrders());
     }

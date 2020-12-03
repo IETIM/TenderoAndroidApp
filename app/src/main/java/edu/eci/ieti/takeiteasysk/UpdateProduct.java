@@ -120,6 +120,7 @@ public class UpdateProduct extends AppCompatActivity {
             product.setDescription(description);
             product.setPrice(Long.parseLong(price));
             product.setStocks(Long.parseLong(stock));
+            product.setId(oldProduct.getId());
         }
         return product;
     }
@@ -134,7 +135,6 @@ public class UpdateProduct extends AppCompatActivity {
                 progressDialog = new ProgressDialog(this);
                 progressDialog.setTitle("Actualizando...");
                 progressDialog.show();
-                product.setId(oldProduct.getId());
                 product.setImage(oldProduct.getImage());
                 saveProduct(product);
             }
